@@ -1,0 +1,42 @@
+.containerAbout {    
+    height: 900px;
+    .titleAbout {
+        text-align: center;        
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 40px;
+            margin: 7px 0;
+        }
+
+        p {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 24px;
+            margin: 0 0 100px 0;
+        }
+    }
+
+    .skillsAbout {
+        border: 1px solid var(--white);
+        margin: 0 20px;
+
+        img {            
+            width: 53px;
+            margin: 40px 4px;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 600;            
+            margin-top: 25px;
+        }
+
+        .skills {
+            margin-left: 25px;
+        }
+
+        
+    }
+}

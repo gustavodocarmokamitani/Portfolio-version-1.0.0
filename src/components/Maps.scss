@@ -1,0 +1,73 @@
+.containerMaps {
+    margin-top: 100px;
+    height: 1000px;
+
+    .rowContent {
+        margin-top: 50px;   
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+        margin: 50px ;
+    }
+    h2 {
+        width: 100%;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 56px;        
+    }
+
+    #formMaps {
+        width: 200px;
+        height: 36px;
+        border-radius: 25px;
+        border: none;
+        margin: 20px 0;
+    }
+
+    .card {        
+        margin: 20px 0;
+        height: 328px;
+        border-radius: 10px;
+        background: linear-gradient(270deg, rgba(215, 20, 137, 0.15) 0.01%, rgba(0, 71, 136, 0.15) 100.01%);
+        border: 1px solid rgba(0, 0, 0, 0.116);
+    }
+
+    .btnMaps {
+        position: relative;
+        width: 148px;
+        height: 36px;
+        line-height: 4px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(270deg, #d71489 -1.04%, #004788 100%);
+        font-size: 13px;
+        margin-right: 15px;        
+
+    }
+    .btnMaps span {
+        position: relative;
+        z-index: 3;
+    }
+
+    .btnMaps::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 25px;
+        background: linear-gradient(270deg, #004788 -1.04%, #d71489 100%);
+        z-index: 2;
+        opacity: 0;
+        transition: all ease-out 0.3s;
+    }
+
+    .btnMaps:hover::after {
+        opacity: 1;
+        border: 1px solid #daa520;
+    }
+
+}
