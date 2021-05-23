@@ -2,10 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
 
+.App {
+    height: 100%;
+}
+
 body {
     height: 100%;
     background: rgb(0,71,136);
-background: linear-gradient(0deg, rgba(0,71,136,0.6746411483253589) 0%, rgba(37,43,66,1) 45%);
+    background: linear-gradient(0deg, rgba(0,71,136,0.6746411483253589) 0%, rgba(37,43,66,1) 45%);
     color: var(--white);
     font-family: "Montserrat", sans-serif;
     

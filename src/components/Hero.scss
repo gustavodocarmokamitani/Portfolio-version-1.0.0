@@ -1,12 +1,12 @@
-.containerHero {    
+.containerHero {
     margin-top: 100px;
-    
+
     .heroTitle h2 {
         font-size: 40px;
-        font-weight: 800;     
-        line-height: 55px;           
+        font-weight: 800;
+        line-height: 55px;
     }
-        
+
     .heroTitle h2:nth-child(2) {
         margin-left: 50px;
     }
@@ -16,49 +16,23 @@
     }
 
     .heroCopy p {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 20px;
-        letter-spacing: .14px;
-        font-weight: 500;
+        letter-spacing: 0.14px;
+        font-weight: 300;
         margin: 30px 60px 30px 0;
     }
 
-    .heroBtn button {
-        position: relative;
-        width: 148px;
-        height: 36px;
-        line-height: 4px;
+    .heroBtn button {  
         border: none;
         border-radius: 25px;
-        background: linear-gradient(270deg, #d71489 -1.04%, #004788 100%);
-        font-size: 13px;
-        margin-right: 15px;
-    }
 
-    .heroBtn button span {
-        position: relative;
-        z-index: 3;
+        a {
+            text-decoration: none;
+            color: var(--white);
+        }
     }
-
-    .heroBtn button::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        border-radius: 25px;
-        background: linear-gradient(270deg, #004788 -1.04%, #d71489 100%);
-        z-index: 2;
-        opacity: 0;
-        transition: all ease-out 0.3s;
-    }
-
-    .heroBtn button:hover::after {
-        opacity: 1;
-        border: 1px solid #daa520;
-    }
-
+    
     .vectorImg {
         position: relative;
         top: -50px;
@@ -67,8 +41,76 @@
     .userImg {
         position: absolute;
         width: 250px;
-        border-radius: 50%;        
+        border-radius: 50%;
         top: 40px;
         left: 140px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .containerHero {
+        margin-top: 50px;
+
+        .heroTitle {
+            text-align: center;
+        }
+
+        .heroTitle h2:nth-child(2) {
+            margin-left: 0;
+        }
+
+        .heroTitle h2:nth-child(3) {
+            margin-left: 0px;
+        }
+
+        .heroCopy p {
+            margin: 30px auto 30px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.14px;
+            font-weight: 500;
+        }
+
+        .heroBtn {
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        .heroBtn button {
+            position: relative;
+            width: 138px;
+            height: 36px;
+            line-height: 4px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(270deg, #d71489 -1.04%, #004788 100%);
+            font-size: 13px;
+        }
+
+        .heroImage {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;                        
+            align-items: center;
+            position: relative;            
+        }
+        
+        .vectorImg {
+            position: absolute;
+            width: 400px;
+            top: 10px;
+        }
+    
+        .userImg {
+            position: static;
+            z-index: 2;            
+            width: 200px;
+            border-radius: 50%;            
+            margin-left: 10px;
+            margin-top: 70px;
+            
+        }
     }
 }

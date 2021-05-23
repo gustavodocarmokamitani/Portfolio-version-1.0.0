@@ -9,16 +9,17 @@ const About = () => (
             <Col className="titleAbout">
                 <h2>Hi, I'm G. Kamitani,</h2>
                 <h2>Nice to meet you. 👋</h2>
-                <p>Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Tenho 24 anos e atualmente cursando Analise e Desenvolvimento de Sistemas na Faculdade Impacta de Tecnologias.<br/>
+                Em busca de uma oportunidade para desenvolver e melhorar meus conhecimentos, e também algo que possa me instruir de forma crescente e contínua, visando sempre o crescimento entre mim e a empresa.</p>
             </Col>
         </Row>
         <Row>
-            <Col className="skillsAbout">
+            <Col className="skillsAbout" lg={5} xs={11}>
                 <Row>
-                    <Col lg={2} xs={12}>
+                    <Col xs={2} lg={2}>
                         <img src={aboutImage}></img>
                     </Col>
-                    <Col lg={10} xs={12}>
+                    <Col lg={9} xs={9} className="aboutContent">
                         <h4>Designer</h4>
                         <p>Estou sempre valorizando estruturas com conteúdos simples e designs minimalistas.</p>
                         <p>Habilidades:</p>
@@ -34,12 +35,12 @@ const About = () => (
                 </Row>
             </Col>
 
-            <Col className="skillsAbout">
+            <Col className="skillsAbout" lg={5} xs={11}>
                 <Row>
-                    <Col lg={2} xs={12}>
+                    <Col xs={2} lg={2}>
                         <img src={aboutImage}></img>
                     </Col>
-                    <Col lg={10} xs={12}>
+                    <Col lg={9} xs={9} className="aboutContent">
                         <h4>Front-end Developer</h4>
                         <p>Gosto de desenvolver sistemas do zero e dar vida as ideias dentro do browser.</p>
                         <p>Habilidades:</p>
@@ -48,7 +49,7 @@ const About = () => (
                                 <p>• Html</p>
                                 <p>• Css</p>
                                 <p>• Scss</p>
-                                <p>• JavaScript</p>
+                                <p>• JScript</p>
                             </Col>
                             <Col className="skills">
                                 <p>• Bootstrap</p>
