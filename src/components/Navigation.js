@@ -12,10 +12,10 @@ const Navigation = () => (
                 <Nav className="ml-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#hero">Sobre mim</Nav.Link>
-                    <Nav.Link href="#link">Projetos</Nav.Link>
+                    <Nav.Link href="#link">Projetos</Nav.Link>                    
                 </Nav>
-                <Nav className="ml-auto">
-                    <Btn className="btnNavigation"><a href="https://mywhats.net/gustavokamitani" target="_blank"><span>Say Hello</span></a></Btn>
+                <Nav className="ml-auto">                                    
+                    <Btn className="btnNavigation"><a href="https://mywhats.net/gustavokamitani" target="_blank"><span>Say Hello</span></a></Btn>                    
                 </Nav>
             </Navbar.Collapse>
         </Container>
