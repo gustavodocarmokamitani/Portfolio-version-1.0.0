@@ -2,6 +2,6 @@
 
 ### `Access the Project:`
 
-## https://app.netlify.com/sites/nifty-tereshkova-2657a3/overview
+## https://nifty-tereshkova-2657a3.netlify.app/
 
 --------------------------------------------------------------------------
